@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+
+  <!-- Header -->
+
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="logo-image">
+    </a>
+    <div class="main-nav__wrapper">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button"></button>
+        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="sedona-svg-logo">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="#">Фото и видео</a></li>
+          <li class="site-list__item"><a href="#">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="#">Html academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main  -->
+
+  <main class="page-main">
+    <h1 class="page-main__header">Оставьте свой отзыв</h1>
+    <h2 class="page-main__header-intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+
+    <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+
+      <!-- User name info  -->
+
+      <fieldset class="username">
+        <legend class="username__header">Представтесь:</legend>
+        <label class="username__label" for="name">Имя:</label>
+        <input class="username__input" type="text" name="" value="Петр" id="name">
+        <label class="username__label" for="surname">Фамилия:</label>
+        <input class="username__input" type="text" name="" value="Иванов" id="surname">
+        <label class="username__label" for="patronymic">Отчество:</label>
+        <input class="username__input" type="text" name="" value="Александрович" id="patronymic">
+      </fieldset>
+
+      <!-- User contacts info -->
+
+      <fieldset class="user-contacts">
+        <legend class="user-contacts__header">Контактная информация:</legend>
+        <label class="user-contacts__label" for="phone">Контактный телефон:</label>
+        <input class="user-contacts__input" type="text" name="" value="Введите телефон" id="phone">
+        <label class="user-contacts__label" for="mail">Электронная почта:</label>
+        <input class="user-contacts__input" type="text" name="" value="Введите e-mail" id="mail">
+      </fieldset>
+
+      <!-- User impressions info -->
+
+      <fieldset class="user-impression">
+        <legend user="user-impression__header">Ваше общее впечатление:</legend>
+          <input type="radio" name="imp" value="" id="posimpr" checked>
+          <label for="posimpr">Скорее положительные:</label>
+          <input type="radio" name="imp" value="" id="negimpr">
+          <label for="negimpr">Скорее отрицательные:</label>
+          <input type="radio" name="imp" value="" id="ntrlimpr">
+          <label for="ntrlimpr">Затрудняюсь ответить</label>
+      </fieldset>
+
+      <!-- User visited places info -->
+
+      <fieldset class="user-visited">
+        <legend class="user-visited__header">Посещенные достопримечательности:</legend>
+        <input type="checkbox" name="bridge" value="" id="bridge">
+        <label for="bridge">Мост дьявола</label>
+        <input type="checkbox" name="bridge" value="" id="park">
+        <label for="park">Слайд парк</label>
+        <input type="checkbox" name="bridge" value="" id="mnt">
+        <label for="mnt">Гора-Колокол</label>
+        <input type="checkbox" name="bridge" value="" id="redr">
+        <label for="redr">Красные скалы</label>
+      </fieldset>
+
+      <!-- User feedback -->
+
+      <fieldset class="user-feedback">
+        <legend class="user-feedback__header">Опишите свои эмоции:</legend>
+        <textarea class="user-feedback__text" name="name" rows="8" cols="80" >Опишите подбробно все свои восторги</textarea>
+      </fieldset>
+
+      <button class="promo__link" type="submit" name="button">Отпавить отзыв</button>
+
+    </form>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="page-footer">
+      <h2 class="page-footer__header">#Visitsedona</h2>
+
+      <div class="page-footer__social social">
+        <ul clas="social__list">
+          <li class="social__item">
+            <a class="social__item-link social__item-link--twr" href="#"></a>
+            <a class="social__item-link social__item-link--fb" href="#"></a>
+            <a class="social__item-link social__item-link--yt" href="#"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text copyright__text--bgimg">Разработано</b>
+      </div>
+  </footer>
+
+
+</body>
+</html>
