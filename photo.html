@@ -10,12 +10,13 @@
 
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="logo-image">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="лого">
     </a>
     <div class="main-nav__wrapper">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" name="button"></button>
-        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="sedona-svg-logo">
+        <!-- Кнопка, раскрывающая адаптивное меню -->
+        <button class="main-nav__toggle" type="button" name="button">Меню</button>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
           <li class="site-list__item"><a href="#">Фото и видео</a></li>
@@ -24,9 +25,15 @@
         </ul>
       </nav>
     </div>
+
+    <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
+    <div class="page-header__promo">
+        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="svg текст 'Седона' ">
+    </div>
   </header>
 
   <!-- Main  -->
+  <!-- Класс photo__like-counter-bgimg  - модификатор для вставки иконки лайка -->
 
   <main class="page-main">
     <h1 class="page-main__header">Фото и видео</h1>
@@ -35,35 +42,35 @@
     <ul class="photo-list">
       <li class="photo-list__item photo">
         <figure class="photo-block">
-          <img class="photo-block__image"src="http://placehold.it/150x100" alt="photo">
-          <figcaption clas="photo-block__comments">Народные просторы</figcaption>
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Народные просторы</figcaption>
         </figure>
         <p class="photo__author-name">Автор фото: Борис</p>
-        <div class="photo__like-counter photo__like-counter--bgimg">1350</div>
+        <p class="photo__like-counter photo__like-counter--bgimg">1350</p>
       </li>
       <li class="photo-list__item photo">
         <figure class="photo-block">
-          <img class="photo-block__image"src="http://placehold.it/150x100" alt="photo">
-          <figcaption clas="photo-block__comments">Местная растительность</figcaption>
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Местная растительность</figcaption>
         </figure>
         <p class="photo__author-name">Автор фото: Сергей</p>
-        <div class="photo__like-counter photo__like-counter--bgimg">143</div>
+        <p class="photo__like-counter photo__like-counter--bgimg">143</p>
       </li>
       <li class="photo-list__item photo">
         <figure class="photo-block">
-          <img class="photo-block__image"src="http://placehold.it/150x100" alt="photo">
-          <figcaption clas="photo-block__comments">Дорога на север</figcaption>
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Дорога на север</figcaption>
         </figure>
         <p class="photo__author-name">Автор фото: Петр</p>
-        <div class="photo__like-counter photo__like-counter--bgimg">96 </div>
+        <p class="photo__like-counter photo__like-counter--bgimg">96 </p>
       </li>
       <li class="photo-list__item photo">
         <figure class="photo-block">
-          <img class="photo-block__image"src="http://placehold.it/150x100" alt="photo">
-          <figcaption clas="photo-block__comments">Мост дьвола</figcaption>
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Мост дьвола</figcaption>
         </figure>
         <p class="photo__author-name">Автор фото: Антон</p>
-        <div class="photo__like-counter photo__like-counter--bgimg">254</div>
+        <p class="photo__like-counter photo__like-counter--bgimg">254</p>
       </li>
     </ul>
 
@@ -85,7 +92,7 @@
       <h2 class="page-footer__header">#Visitsedona</h2>
 
       <div class="page-footer__social social">
-        <ul clas="social__list">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__item-link social__item-link--twr" href="#"></a>
             <a class="social__item-link social__item-link--fb" href="#"></a>

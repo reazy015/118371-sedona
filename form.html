@@ -10,12 +10,13 @@
 
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="logo-image">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="лого">
     </a>
     <div class="main-nav__wrapper">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" name="button"></button>
-        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="sedona-svg-logo">
+        <!-- Кнопка, раскрывающая адаптивное меню -->
+        <button class="main-nav__toggle" type="button" name="button">Меню</button>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
           <li class="site-list__item"><a href="#">Фото и видео</a></li>
@@ -23,6 +24,11 @@
           <li class="site-list__item"><a href="#">Html academy</a></li>
         </ul>
       </nav>
+    </div>
+
+    <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
+    <div class="page-header__promo">
+        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="svg текст 'Седона' ">
     </div>
   </header>
 
@@ -36,49 +42,50 @@
 
       <!-- User name info  -->
 
-      <fieldset class="username">
+      <fieldset class="main-form__fieldset username">
         <legend class="username__header">Представтесь:</legend>
         <label class="username__label" for="name">Имя:</label>
-        <input class="username__input" type="text" name="" value="Петр" id="name">
+        <input class="username__input" type="text"  id="name" placeholder="Пётр">
         <label class="username__label" for="surname">Фамилия:</label>
-        <input class="username__input" type="text" name="" value="Иванов" id="surname">
+        <input class="username__input" type="text"  id="surname" placeholder="Иванов">
         <label class="username__label" for="patronymic">Отчество:</label>
-        <input class="username__input" type="text" name="" value="Александрович" id="patronymic">
+        <input class="username__input" type="text"  id="patronymic" placeholder="Александрович">
       </fieldset>
 
       <!-- User contacts info -->
 
-      <fieldset class="user-contacts">
+      <fieldset class="main-form__fieldset user-contacts">
         <legend class="user-contacts__header">Контактная информация:</legend>
         <label class="user-contacts__label" for="phone">Контактный телефон:</label>
-        <input class="user-contacts__input" type="text" name="" value="Введите телефон" id="phone">
+        <input class="user-contacts__input" type="text"  id="phone" placeholder="Введите номер телефона">
         <label class="user-contacts__label" for="mail">Электронная почта:</label>
-        <input class="user-contacts__input" type="text" name="" value="Введите e-mail" id="mail">
+        <input class="user-contacts__input" type="text"  id="mail" placeholder="Введите e-mail">
       </fieldset>
 
       <!-- User impressions info -->
+      <!--  class user-op  for user opinion -->
 
-      <fieldset class="user-impression">
-        <legend user="user-impression__header">Ваше общее впечатление:</legend>
-          <input type="radio" name="imp" value="" id="posimpr" checked>
+      <fieldset class="main-form__fieldset user-op">
+        <legend class="user-op__header">Ваше общее впечатление:</legend>
+          <input type="radio"  id="posimpr" checked>
           <label for="posimpr">Скорее положительные:</label>
-          <input type="radio" name="imp" value="" id="negimpr">
+          <input type="radio" id="negimpr">
           <label for="negimpr">Скорее отрицательные:</label>
-          <input type="radio" name="imp" value="" id="ntrlimpr">
+          <input type="radio"  id="ntrlimpr">
           <label for="ntrlimpr">Затрудняюсь ответить</label>
       </fieldset>
 
       <!-- User visited places info -->
 
-      <fieldset class="user-visited">
+      <fieldset class="main-form__fieldset user-visited">
         <legend class="user-visited__header">Посещенные достопримечательности:</legend>
-        <input type="checkbox" name="bridge" value="" id="bridge">
+        <input type="checkbox"  id="bridge">
         <label for="bridge">Мост дьявола</label>
-        <input type="checkbox" name="bridge" value="" id="park">
+        <input type="checkbox"  id="park">
         <label for="park">Слайд парк</label>
-        <input type="checkbox" name="bridge" value="" id="mnt">
+        <input type="checkbox"  id="mnt">
         <label for="mnt">Гора-Колокол</label>
-        <input type="checkbox" name="bridge" value="" id="redr">
+        <input type="checkbox"  id="redr">
         <label for="redr">Красные скалы</label>
       </fieldset>
 
@@ -94,23 +101,42 @@
     </form>
   </main>
 
+  <!-- Modals -->
+
+  <div class="modal modal-error">
+    <h2 class="modal__header">Что-то пошло не так!</h2>
+    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__btn cls-btn" type="button" name="button">Закрыть</button>
+  </div>
+
+  <div class="modal modal-success">
+    <h2 class="modal__header">Ваш отзыв отправлен!</h2>
+    <p class="modal__text">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="modal__btn cls-btn" type="button" name="button">Закрыть</button>
+  </div>
+
   <!-- Footer -->
 
   <footer class="page-footer">
       <h2 class="page-footer__header">#Visitsedona</h2>
 
       <div class="page-footer__social social">
-        <ul clas="social__list">
+        <ul class="social__list">
           <li class="social__item">
-            <a class="social__item-link social__item-link--twr" href="#"></a>
-            <a class="social__item-link social__item-link--fb" href="#"></a>
-            <a class="social__item-link social__item-link--yt" href="#"></a>
+            <a class="social__item-link social__item-link--twr" href="twitter.com">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--fb" href="facebook.com">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--yt" href="youtube.com">Youtube</a>
           </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text copyright__text--bgimg">Разработано</b>
+        <!-- Класс copyright__text-bgimg для всавтки иконки HTMLAcademy в качестве заднего фона с позиционированием справа-->
+        <b class="copyright__text copyright__text--bgimg">Разработано <a class="copyright__link" href="htmlacademy.ru">HTMLAcademy</a></b>
       </div>
   </footer>
 
