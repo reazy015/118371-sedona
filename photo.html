@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+
+  <!-- Header -->
+
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="лого">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <!-- Кнопка, раскрывающая адаптивное меню -->
+        <button class="main-nav__toggle" type="button" name="button">Меню</button>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="#">Фото и видео</a></li>
+          <li class="site-list__item"><a href="#">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="#">Html academy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
+    <div class="page-header__promo">
+        <div class="image-wrapper"><img class="page-header__promo-text" src="http://placehold.it/150x100" alt="svg текст 'Седона' "></div>
+    </div>
+  </header>
+
+  <!-- Main  -->
+  <!-- Класс photo__like-counter-bgimg  - модификатор для вставки иконки лайка -->
+
+  <main class="page-main">
+    <h1 class="page-main__header">Фото и видео</h1>
+    <h2 class="page-main__header-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+
+    <ul class="photo-list">
+      <li class="photo-list__item photo">
+        <figure class="photo-block">
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Народные просторы</figcaption>
+        </figure>
+        <p class="photo__author-name">Автор фото: Борис</p>
+        <p class="photo__like-counter photo__like-counter--bgimg">1350</p>
+      </li>
+      <li class="photo-list__item photo">
+        <figure class="photo-block">
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Местная растительность</figcaption>
+        </figure>
+        <p class="photo__author-name">Автор фото: Сергей</p>
+        <p class="photo__like-counter photo__like-counter--bgimg">143</p>
+      </li>
+      <li class="photo-list__item photo">
+        <figure class="photo-block">
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Дорога на север</figcaption>
+        </figure>
+        <p class="photo__author-name">Автор фото: Петр</p>
+        <p class="photo__like-counter photo__like-counter--bgimg">96 </p>
+      </li>
+      <li class="photo-list__item photo">
+        <figure class="photo-block">
+          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
+          <figcaption class="photo-block__comments">Мост дьвола</figcaption>
+        </figure>
+        <p class="photo__author-name">Автор фото: Антон</p>
+        <p class="photo__like-counter photo__like-counter--bgimg">254</p>
+      </li>
+    </ul>
+
+    <!-- Main promo section -->
+
+    <section class="promo">
+      <h2 class="promo__header">Все еще сомневаетесь?</h2>
+      <p class="promo__tetxt">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video class="promo__video" width="320" height="240" controls>
+
+      </video>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="page-footer">
+      <h2 class="page-footer__header">#Visitsedona</h2>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__item-link social__item-link--twr" href="twitter.com">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--fb" href="facebook.com">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--yt" href="youtube.com">Youtube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <!-- Класс copyright__text-bgimg для всавтки иконки HTMLAcademy в качестве заднего фона с позиционированием справа-->
+        <b class="copyright__text copyright__text--bgimg">Разработано <a class="copyright__link" href="htmlacademy.ru">HTMLAcademy</a></b>
+      </div>
+  </footer>
+
+
+</body>
+</html>
