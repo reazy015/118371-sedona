@@ -1,0 +1,25 @@
+.promo{
+  padding-top: 30px;
+
+  &__header{
+    @include font-bold;
+    text-align: center;
+  }
+
+  &__text{
+    @include font-normal;
+    text-align: center;
+  }
+
+  &__link{
+    @include font-bold;
+    display: block;  
+    padding: 20px 43px;
+    margin: auto;
+    background: $background-main;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+
+  }
+}

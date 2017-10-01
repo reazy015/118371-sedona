@@ -1,0 +1,15 @@
+.site-list{
+  @include list-style-none;
+
+  &__item{
+    text-align: center;
+    background: $background-main;
+  }
+}
+.link{
+  @include font-bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}

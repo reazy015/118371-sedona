@@ -1,0 +1,12 @@
+@mixin list-style-none{
+  list-style: none;
+  padding: 0px;
+}
+@mixin font-normal{
+  font-family: "PTSans";
+  text-transform: uppercase;
+}
+@mixin font-bold {
+  font-family: "PTSansBold";
+  text-transform: uppercase;
+}

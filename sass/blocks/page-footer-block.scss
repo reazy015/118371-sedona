@@ -1,0 +1,13 @@
+.page-footer{
+  &__header{
+    @include font-bold;
+    text-align: center;
+  }
+}
+.copyright{
+  @include font-bold;
+  text-align: center;
+  background-image: url('/img/htmlacademy.svg');
+  background-repeat: no-repeat;
+  background-position: 60%;
+}

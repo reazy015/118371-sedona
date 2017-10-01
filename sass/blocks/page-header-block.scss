@@ -1,0 +1,14 @@
+.page-header{
+  &__logo-image{
+    display: block;
+    margin: auto;
+  }
+  &__promo{
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+  }
+  &__promo-text{
+    display: block;
+    margin: auto;
+  }
+}

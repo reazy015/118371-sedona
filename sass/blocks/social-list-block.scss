@@ -1,0 +1,15 @@
+.social{
+    &__list{
+      @include list-style-none;
+      text-align: center;
+    }
+
+    &__item{
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      background-color: $background-main;
+    }
+
+
+}

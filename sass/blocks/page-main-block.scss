@@ -1,0 +1,11 @@
+.page-main{
+  &__header{
+    @include font-bold;
+    text-align: center;
+  }
+  &__header-intro{
+    @include font-normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
