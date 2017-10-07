@@ -1,11 +1,16 @@
 .page-main{
+  padding-top: 45px;
   &__header{
     @include font-bold;
     text-align: center;
+    line-height: 25px;
   }
   &__header-intro{
     @include font-normal;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 42px;
+    line-height: 21px;
   }
 }

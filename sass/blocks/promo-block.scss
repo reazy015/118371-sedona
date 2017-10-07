@@ -1,19 +1,25 @@
 .promo{
   padding-top: 30px;
+  padding-bottom: 50px;
 
   &__header{
     @include font-bold;
     text-align: center;
+    font-size: 21px;
+    padding-bottom: 24px;
   }
 
   &__text{
     @include font-normal;
     text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 40px;
   }
 
   &__link{
     @include font-bold;
-    display: block;  
+    display: block;
     padding: 20px 43px;
     margin: auto;
     background: $background-main;

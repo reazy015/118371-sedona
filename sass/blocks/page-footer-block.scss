@@ -1,7 +1,10 @@
 .page-footer{
+  padding-top: 40px;
+  padding-bottom: 23px;
   &__header{
     @include font-bold;
     text-align: center;
+    padding-bottom: 43px;
   }
 }
 .copyright{
