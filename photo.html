@@ -10,26 +10,29 @@
   <!-- Header -->
 
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="лого">
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <!-- Кнопка, раскрывающая адаптивное меню -->
-        <button class="main-nav__toggle" type="button" name="button">Меню</button>
+    <div class="container">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="link" href="#">Главная</a></li>
+            <li class="site-list__item"><a class="link" href="#">Фото и видео</a></li>
+            <li class="site-list__item"><a class="link" href="#">Форма отзыва</a></li>
+            <li class="site-list__item"><a class="link" href="#">Html academy</a></li>
+          </ul>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="#">Фото и видео</a></li>
-          <li class="site-list__item"><a href="#">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="#">Html academy</a></li>
-        </ul>
+          <!-- Кнопка, раскрывающая адаптивное меню -->
+          <button class="main-nav__toggle" type="button" name="button">Меню</button>
+        </div>
+      </nav>
+
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="лого">
+      </a>
+
+      <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
+      <div class="page-header__promo">
+          <div class="image-wrapper"><img class="page-header__promo-text" src="img/text-sedona.svg" alt="svg текст 'Седона' " ></div>
       </div>
-    </nav>
-
-    <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
-    <div class="page-header__promo">
-        <div class="image-wrapper"><img class="page-header__promo-text" src="http://placehold.it/150x100" alt="svg текст 'Седона' "></div>
     </div>
   </header>
 
@@ -37,53 +40,55 @@
   <!-- Класс photo__like-counter-bgimg  - модификатор для вставки иконки лайка -->
 
   <main class="page-main">
-    <h1 class="page-main__header">Фото и видео</h1>
-    <h2 class="page-main__header-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+    <div class="container">
+      <h1 class="page-main__header">Фото и видео</h1>
+      <h2 class="page-main__header-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
 
-    <ul class="photo-list">
-      <li class="photo-list__item photo">
-        <figure class="photo-block">
-          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
-          <figcaption class="photo-block__comments">Народные просторы</figcaption>
-        </figure>
-        <p class="photo__author-name">Автор фото: Борис</p>
-        <p class="photo__like-counter photo__like-counter--bgimg">1350</p>
-      </li>
-      <li class="photo-list__item photo">
-        <figure class="photo-block">
-          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
-          <figcaption class="photo-block__comments">Местная растительность</figcaption>
-        </figure>
-        <p class="photo__author-name">Автор фото: Сергей</p>
-        <p class="photo__like-counter photo__like-counter--bgimg">143</p>
-      </li>
-      <li class="photo-list__item photo">
-        <figure class="photo-block">
-          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
-          <figcaption class="photo-block__comments">Дорога на север</figcaption>
-        </figure>
-        <p class="photo__author-name">Автор фото: Петр</p>
-        <p class="photo__like-counter photo__like-counter--bgimg">96 </p>
-      </li>
-      <li class="photo-list__item photo">
-        <figure class="photo-block">
-          <div class="image-wrapper"><img class="photo-block__image" src="http://placehold.it/150x100" alt="фотография"></div>
-          <figcaption class="photo-block__comments">Мост дьвола</figcaption>
-        </figure>
-        <p class="photo__author-name">Автор фото: Антон</p>
-        <p class="photo__like-counter photo__like-counter--bgimg">254</p>
-      </li>
-    </ul>
+      <ul class="photo-list">
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-sunset-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Народные просторы</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Борис</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">1350</p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Местная растительность</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Сергей</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">143</p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Дорога на север</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Петр</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">96 </p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Мост дьвола</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Антон</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">254</p>
+        </li>
+      </ul>
 
-    <!-- Main promo section -->
+      <!-- Main promo section -->
 
-    <section class="promo">
-      <h2 class="promo__header">Все еще сомневаетесь?</h2>
-      <p class="promo__tetxt">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="promo__video" width="320" height="240" controls>
+      <section class="promo">
+        <h2 class="promo__header">Все еще сомневаетесь?</h2>
+        <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="promo__video" width="320" height="240" controls>
 
-      </video>
-    </section>
+        </video>
+      </section>
+    </div>
 
   </main>
 

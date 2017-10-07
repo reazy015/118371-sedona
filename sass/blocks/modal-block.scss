@@ -1,0 +1,31 @@
+.modal{
+  outline: 1px solid red;
+  &__header{
+    @include font-bold;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+  &__text{
+    @include font-normal;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__btn{
+    @include font-bold;
+    color: #ffffff;
+    display: block;
+    background-color: $background-main;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    border: none;
+
+  }
+}
+.modal-error__btn{
+  width: 180px;
+}
+.modal-success__btn{
+  width: 280px;
+}

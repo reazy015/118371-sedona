@@ -1,5 +1,6 @@
 .page-main{
   padding-top: 45px;
+
   &__header{
     @include font-bold;
     text-align: center;
@@ -12,5 +13,7 @@
     text-align: center;
     padding-top: 42px;
     line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 25px;
   }
 }

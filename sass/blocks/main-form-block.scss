@@ -1,0 +1,77 @@
+fieldset{
+  padding: 0;
+}
+.main-form{
+  padding-top: 25px;
+
+  &__fieldset{
+    border: none;
+  }
+
+  &__btn{
+    @include font-bold;
+    color: #ffffff;
+    border: none;
+    background-color: $background-main;
+    width: 290px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+  }
+}
+
+.fieldset-header{
+    @include font-bold;
+    text-align: center;
+    padding-bottom: 26px;
+}
+.fieldset-label{
+    @include font-normal;
+    font-size: 14px;
+}
+.fieldset-input{
+  @include font-normal;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.user-contacts{
+  &__input{
+    width: 100%;
+  }
+  &__label{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.user-op{
+  padding-bottom: 25px;
+  &__input{
+    display: block;
+  }
+  &__label{
+    @include font-normal;
+    font-size: 18px;
+  }
+}
+
+.user-visited{
+  @include font-normal;
+  font-size: 18px;
+  &__input{
+    display: block;
+  }
+}
+
+.user-feedback{
+  &__text{
+    @include font-bold;
+    font-size: 18px;
+    width: 100%;
+    resize: none;
+    background-color: #eeeeee;
+    border: none;
+    padding: 20px 20px;
+  }
+}
