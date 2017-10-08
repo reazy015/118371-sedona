@@ -3,75 +3,64 @@ fieldset{
 }
 .main-form{
   padding-top: 25px;
-
-  &__fieldset{
-    border: none;
-  }
-
-  &__btn{
-    @include font-bold;
-    color: #ffffff;
-    border: none;
-    background-color: $background-main;
-    width: 290px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-  }
 }
-
+.main-form__fieldset{
+  border: none;
+}
+.main-form__btn{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background-color: $background-main;
+  width: 290px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
 .fieldset-header{
-    @include font-bold;
-    text-align: center;
-    padding-bottom: 26px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 26px;
 }
 .fieldset-label{
-    @include font-normal;
-    font-size: 14px;
+  font-size: 14px;
 }
 .fieldset-input{
-  @include font-normal;
   font-size: 14px;
   margin-bottom: 20px;
 }
-
-.user-contacts{
-  &__input{
-    width: 100%;
-  }
-  &__label{
-    display: block;
-    margin-bottom: 10px;
-  }
+.user-contacts{}
+.user-contacts__input{
+  width: 100%;
 }
-
+.user-contacts__label{
+  display: block;
+  margin-bottom: 10px;
+}
 .user-op{
   padding-bottom: 25px;
-  &__input{
-    display: block;
-  }
-  &__label{
-    @include font-normal;
-    font-size: 18px;
-  }
 }
-
-.user-visited{
-  @include font-normal;
+.user-op__input{
+  display: block;
+}
+.user-op__label{
   font-size: 18px;
-  &__input{
-    display: block;
-  }
 }
-
-.user-feedback{
-  &__text{
-    @include font-bold;
-    font-size: 18px;
-    width: 100%;
-    resize: none;
-    background-color: #eeeeee;
-    border: none;
-    padding: 20px 20px;
-  }
+.user-visited{
+  font-size: 18px;
+}
+.user-visited__input{
+  display: block;
+}
+.user-feedback{}
+.user-feedback__text{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  resize: none;
+  background-color: #eeeeee;
+  border: none;
+  padding: 20px 20px;
 }

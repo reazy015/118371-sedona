@@ -1,14 +1,12 @@
 .page-footer{
   padding-top: 40px;
   padding-bottom: 23px;
-  &__header{
-    @include font-bold;
+}
+.page-footer__header{
     text-align: center;
     padding-bottom: 43px;
-  }
 }
 .copyright{
-  @include font-bold;
   text-align: center;
   background-image: url('/img/htmlacademy.svg');
   background-repeat: no-repeat;

@@ -2,13 +2,3 @@
   list-style: none;
   padding: 0px;
 }
-@mixin font-normal{
-  font-family: "PTSans";
-  font-size: 18px;
-  text-transform: uppercase;
-}
-@mixin font-bold {
-  font-family: "PTSansBold";
-  text-transform: uppercase;
-  font-size: 18px;
-}

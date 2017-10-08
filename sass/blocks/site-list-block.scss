@@ -1,17 +1,14 @@
 .site-list{
   @include list-style-none;
-
-  &__item{
-    text-align: center;
-    background: $background-main;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
+}
+.site-list__item{
+  text-align: center;
+  background: $background-main;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 .link{
-  @include font-bold;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-
+  font-weight: bold;
 }

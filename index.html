@@ -31,83 +31,62 @@
 
       <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
       <div class="page-header__promo">
-          <div class="image-wrapper"><img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="svg текст 'Седона' " ></div>
+          <div class="image-wrapper"><img class="page-header__promo-text" src="img/text-sedona.svg" alt="svg текст 'Седона' " ></div>
       </div>
     </div>
   </header>
 
   <!-- Main  -->
+  <!-- Класс photo__like-counter-bgimg  - модификатор для вставки иконки лайка -->
 
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__header">Седона - небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h1>
-      <h2 class="page-main__header-intro">Рассмотри 5 причин, по которым<br> седона круче чем гранд каньон!</h2>
+      <h1 class="page-main__header">Фото и видео</h1>
+      <h2 class="page-main__header-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
 
-      <!-- Main advantages section -->
-
-      <section class="advantages">
-        <!-- h2  заголовок будет спрятан, нужен исключительно для валидации -->
-        <h2 class="advantages-header visibility-hidden">Advantages header</h2>
-        <div class="advantages-intro">
-          <h2 class="advantages-intro__header">Настоящий городок <br> - № 1 - </h2>
-          <p class="advantages-intro__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
-          <div class="img-wrapper">
-            <img class="advantages__image" src="img/main-city-mobile@1x.jpg" alt="преимущества">
-          </div>
-        </div>
-
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--accomicon">
-            <h3 class="advantages__item-header">Жилье</h3>
-            <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="advantages__item advantages__item--souvicon">
-            <h3 class="advantages__item-header">Сувениры</h3>
-            <p class="advantages__item-description">Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-header advantages__item--foodicon">Еда</h3>
-            <p class="advantages__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-        </ul>
-
-        <div class="advantages-block advantages-block--bgcolor">
-          <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br>- № 2 -</h2>
-          <p class="advantages-block__description advantages-block__description--white">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
-          <img class="advantages-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="преимущества изображение">
-        </div>
-
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Небольшая площадь <br> № 3 </h2>
-          <p class="block-list__description">Все интересные места находятся очень близко</p>
-        </div>
-
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Красивая дорога <br> № 4 </h2>
-          <p class="block-list__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Мало туристов <br> № 5 </h2>
-          <p class="block-list__description">Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-
-      </section>
+      <ul class="photo-list">
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-sunset-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Народные просторы</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Борис</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">1350</p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Местная растительность</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Сергей</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">143</p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Дорога на север</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Петр</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">96 </p>
+        </li>
+        <li class="photo-list__item photo">
+          <figure class="photo-block">
+            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="фотография"></div>
+            <figcaption class="photo-block__comments">Мост дьвола</figcaption>
+          </figure>
+          <p class="photo__author-name">Автор фото: Антон</p>
+          <p class="photo__like-counter photo__like-counter--bgimg">254</p>
+        </li>
+      </ul>
 
       <!-- Main promo section -->
 
       <section class="promo">
-        <h2 class="promo__header">Заинтересовались?</h2>
-        <p class="promo__text">Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="promo__link btn" href="#">Найти гостиницу</a>
-      </section>
+        <h2 class="promo__header">Все еще сомневаетесь?</h2>
+        <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="promo__video" width="320" height="240" controls>
 
-      <!-- Main map section -->
-
-      <section class="map">
-        <h2 class="map-header visibility-hidden">Map header</h2>
-        <!-- Iframe map will be here soon -->
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="карта">
+        </video>
       </section>
     </div>
 
@@ -133,7 +112,8 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text copyright__text--bgimg">Разработано</b>
+        <!-- Класс copyright__text-bgimg для всавтки иконки HTMLAcademy в качестве заднего фона с позиционированием справа-->
+        <b class="copyright__text copyright__text--bgimg">Разработано <a class="copyright__link" href="htmlacademy.ru">HTMLAcademy</a></b>
       </div>
   </footer>
 
