@@ -1,0 +1,12 @@
+.social{};
+.social__list{
+  @include list-style-none;
+  text-align: center;
+  padding-bottom: 43px;
+}
+.social__item{
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: $background-main;
+}

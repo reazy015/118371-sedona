@@ -3,107 +3,113 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page">
 
   <!-- Header -->
 
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="лого">
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <!-- Кнопка, раскрывающая адаптивное меню -->
-        <button class="main-nav__toggle" type="button" name="button">Меню</button>
+    <div class="container">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="link" href="#">Главная</a></li>
+            <li class="site-list__item"><a class="link" href="#">Фото и видео</a></li>
+            <li class="site-list__item"><a class="link" href="#">Форма отзыва</a></li>
+            <li class="site-list__item"><a class="link" href="#">Html academy</a></li>
+          </ul>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="#">Фото и видео</a></li>
-          <li class="site-list__item"><a href="#">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="#">Html academy</a></li>
-        </ul>
+          <!-- Кнопка, раскрывающая адаптивное меню -->
+          <button class="main-nav__toggle" type="button" name="button">Меню</button>
+        </div>
+      </nav>
+
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="лого">
+      </a>
+
+      <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
+      <div class="page-header__promo">
+          <div class="image-wrapper"><img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="svg текст 'Седона' " ></div>
       </div>
-    </nav>
-
-    <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
-    <div class="page-header__promo">
-        <div class="image-wrapper"><img class="page-header__promo-text" src="http://placehold.it/150x100" alt="svg текст 'Седона' "></div>
     </div>
   </header>
 
   <!-- Main  -->
 
   <main class="page-main">
-    <h1 class="page-main__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-    <h2 class="page-main__header-intro">Рассмотри 5 причин, по которым седона круче чем гранд каньон!</h2>
+    <div class="container">
+      <h1 class="page-main__header">Седона - небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h1>
+      <h2 class="page-main__header-intro">Рассмотри 5 причин, по которым<br> седона круче чем гранд каньон!</h2>
 
-    <!-- Main advantages section -->
+      <!-- Main advantages section -->
 
-    <section class="advantages">
-      <!-- h2  заголовок будет спрятан, нужен исключительно для валидации -->
-      <h2 class="advantages-header visibility-hidden">Advantages header</h2>
-      <div class="advantages-intro">
-        <h2 class="advantages-intro__header">Настоящий городок <br> № 1 </h2>
-        <p class="advantages-intro__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-        <div class="img-wrapper">
-          <img class="advantages__image" src="http://placehold.it/150x100" alt="преимущества">
+      <section class="advantages">
+        <!-- h2  заголовок будет спрятан, нужен исключительно для валидации -->
+        <h2 class="advantages-header visibility-hidden">Advantages header</h2>
+        <div class="advantages-intro">
+          <h2 class="advantages-intro__header">Настоящий городок <br> - № 1 - </h2>
+          <p class="advantages-intro__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
+          <div class="img-wrapper">
+            <img class="advantages__image" src="img/main-city-mobile@1x.jpg" alt="преимущества">
+          </div>
         </div>
-      </div>
 
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__item-header">Жилье</h3>
-          <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__item-header">Сувениры</h3>
-          <p class="advantages__item-description">Не только китайского, но и местного производства!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__item-header">Еда</h3>
-          <p class="advantages__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-      </ul>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--accomicon">
+            <h3 class="advantages__item-header">Жилье</h3>
+            <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="advantages__item advantages__item--souvicon">
+            <h3 class="advantages__item-header">Сувениры</h3>
+            <p class="advantages__item-description">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-header advantages__item--foodicon">Еда</h3>
+            <p class="advantages__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
 
-      <div class="advantages-block">
-        <h2 class="advantages-block__header">Там есть мост дьявола <br> № 2 </h2>
-        <p class="advantages-block__description">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
-        <img class="advantages-block__image" src="http://placehold.it/150x100" alt="преимущества изображение">
-      </div>
+        <div class="advantages-block advantages-block--bgcolor">
+          <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br>- № 2 -</h2>
+          <p class="advantages-block__description advantages-block__description--white">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
+          <img class="advantages-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="преимущества изображение">
+        </div>
 
-      <div class="advantages-block">
-        <h2 class="advantages-block__header">Небольшая площадь <br> № 3 </h2>
-        <p class="advantages-block__description">Все интересные места находятся очень близко</p>
-      </div>
+        <div class="advantages-block block-list">
+          <h2 class="block-list__header">Небольшая площадь <br> № 3 </h2>
+          <p class="block-list__description">Все интересные места находятся очень близко</p>
+        </div>
 
-      <div class="advantages-block">
-        <h2 class="advantages-block__header">Красивая дорога <br> № 4 </h2>
-        <p class="advantages-block__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
+        <div class="advantages-block block-list">
+          <h2 class="block-list__header">Красивая дорога <br> № 4 </h2>
+          <p class="block-list__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
 
-      <div class="advantages-block">
-        <h2 class="advantages-block__header">Мало туристов <br> № 5 </h2>
-        <p class="advantages-block__description">Большинство едет в Гранд Каньон и толпится там</p>
-      </div>
+        <div class="advantages-block block-list">
+          <h2 class="block-list__header">Мало туристов <br> № 5 </h2>
+          <p class="block-list__description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
 
-    </section>
+      </section>
 
-    <!-- Main promo section -->
+      <!-- Main promo section -->
 
-    <section class="promo">
-      <h2 class="promo__header">Заинтересовались!</h2>
-      <p class="promo__text">Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="promo__link" href="#">Найти гостиницу</a>
-    </section>
+      <section class="promo">
+        <h2 class="promo__header">Заинтересовались?</h2>
+        <p class="promo__text">Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="promo__link btn" href="#">Найти гостиницу</a>
+      </section>
 
-    <!-- Main map section -->
+      <!-- Main map section -->
 
-    <section class="map">
-      <h2 class="map-header visibility-hidden">Map header</h2>
-      <!-- Iframe map will be here soon -->
-      <img class="map__image" src="http://placehold.it/150x100" alt="карта">
-    </section>
+      <section class="map">
+        <h2 class="map-header visibility-hidden">Map header</h2>
+        <!-- Iframe map will be here soon -->
+        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="карта">
+      </section>
+    </div>
 
   </main>
 
@@ -115,9 +121,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__item-link social__item-link--twr" href="#"></a>
-            <a class="social__item-link social__item-link--fb" href="#"></a>
-            <a class="social__item-link social__item-link--yt" href="#"></a>
+            <a class="social__item-link social__item-link--twr" href="twitter.com">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--fb" href="facebook.com">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link social__item-link--yt" href="youtube.com">Youtube</a>
           </li>
         </ul>
       </div>

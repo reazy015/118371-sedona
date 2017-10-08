@@ -1,0 +1,25 @@
+.photo-list{
+  @include list-style-none;
+}
+.photo-list__item{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.photo-block{
+  margin: 0;
+}
+.photo-block__image{
+  margin-bottom: 20px;
+}
+.photo-block__comments{
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.photo{}
+.photo__author-name{
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.photo__like-counter{
+  font-size: 14px;
+}

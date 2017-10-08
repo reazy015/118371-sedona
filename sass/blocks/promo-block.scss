@@ -1,0 +1,33 @@
+.promo{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.promo__header{
+  text-align: center;
+  font-size: 21px;
+  padding-bottom: 24px;
+}
+.promo__text{
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 40px;
+
+  &--photo{
+    padding-left: 23px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+.promo__link{
+  display: block;
+  padding: 20px 43px;
+  margin: auto;
+  background: $background-main;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+.image-wrapper{
+  width: 100%;
+}
