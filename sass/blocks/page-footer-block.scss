@@ -12,3 +12,9 @@
   background-repeat: no-repeat;
   background-position: 60%;
 }
+@media(min-width: $tablet-width){
+  .page-footer{
+    display: flex;
+    justify-content: space-around;
+  }
+}

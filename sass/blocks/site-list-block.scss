@@ -26,13 +26,18 @@
   .site-list{
     display: flex;
     justify-content: space-around;
+    height: 56px;
+    padding-top: 22px;
+
   }
   .site-list__item{
     background: none;
+    padding: 0;
 
     &--logo{
       position: static;
       margin-left: 0;
+      margin-top: -22px;
     }
   }
   .site-list__toggle{

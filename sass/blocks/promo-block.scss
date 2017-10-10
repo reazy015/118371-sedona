@@ -31,3 +31,19 @@
 .image-wrapper{
   width: 100%;
 }
+.promo__text-wrap{
+  display: none;
+}
+@media (min-width: $tablet-width){
+  .promo__header{
+    font-size: 30px;
+  }
+  .promo__text-wrap{
+    display: block;
+  }
+  .promo__link{
+    font-size: 21px;
+    font-weight: bold;
+    width: 460px;
+  }
+}

@@ -14,3 +14,14 @@
   line-height: 21px;
   font-weight: 400;
 }
+@media (min-width: $tablet-width){
+  .page-main__header{
+    font-size: 21px;
+  }
+  .page-main__header-wrap{
+    display: none;
+  }
+  .page-main__intro-wrap{
+    display: none;
+  }
+}

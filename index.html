@@ -44,8 +44,8 @@
 
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__header">Седона - небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h1>
-      <h2 class="page-main__header-intro">Рассмотри 5 причин, по которым<br> седона круче чем гранд каньон!</h2>
+      <h1 class="page-main__header">Седона - небольшой<br class="page-main__header-wrap"> городок в Аризоне,<br> заслуживающий большего!</h1>
+      <h2 class="page-main__header-intro">Рассмотри 5 причин, по которым<br class="page-main__intro-wrap"> седона круче чем гранд каньон!</h2>
 
       <!-- Main advantages section -->
 
@@ -78,25 +78,31 @@
         </ul>
 
         <div class="advantages-block advantages-block--bgcolor">
-          <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br>- № 2 -</h2>
-          <p class="advantages-block__description advantages-block__description--white">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
-          <img class="advantages-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="преимущества изображение">
+          <div class="text-wrapper advantages-block__elem-order">
+            <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br>- № 2 -</h2>
+            <p class="advantages-block__description advantages-block__description--white">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
+          </div>
+          <div class="img-wrapper advantages-block__elem-order">
+            <img class="advantages-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="преимущества изображение">
+          </div>
         </div>
 
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Небольшая площадь <br> № 3 </h2>
-          <p class="block-list__description">Все интересные места находятся очень близко</p>
-        </div>
+        <ul class="advantages__list">
+          <div class=" block-list">
+            <h2 class="block-list__header">Небольшая площадь <br> № 3 </h2>
+            <p class="block-list__description">Все интересные места находятся очень близко</p>
+          </div>
 
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Красивая дорога <br> № 4 </h2>
-          <p class="block-list__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
+          <div class=" block-list">
+            <h2 class="block-list__header">Красивая дорога <br> № 4 </h2>
+            <p class="block-list__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
 
-        <div class="advantages-block block-list">
-          <h2 class="block-list__header">Мало туристов <br> № 5 </h2>
-          <p class="block-list__description">Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
+          <div class=" block-list">
+            <h2 class="block-list__header">Мало туристов <br> № 5 </h2>
+            <p class="block-list__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </ul>
 
       </section>
 
@@ -104,7 +110,7 @@
 
       <section class="promo">
         <h2 class="promo__header">Заинтересовались?</h2>
-        <p class="promo__text">Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="promo__text">Укажите предпологаемы даты поездки,<br class="promo__text-wrap"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="promo__link btn" href="#">Найти гостиницу</a>
       </section>
 
@@ -113,7 +119,9 @@
       <section class="map">
         <h2 class="map-header visibility-hidden">Map header</h2>
         <!-- Iframe map will be here soon -->
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="карта">
+        <div class="map__image-wrapper">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="карта">
+        </div>
       </section>
     </div>
 
