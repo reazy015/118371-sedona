@@ -1,11 +1,21 @@
 .site-list{
   @include list-style-none;
+  position: relative;
 }
 .site-list__item{
   text-align: center;
   background: $background-main;
   padding-top: 21px;
   padding-bottom: 21px;
+
+      &--logo{
+        position: absolute;
+        background: transparent;
+        padding: 0;
+        bottom: -84px;
+        left: 50%;
+        margin-left: -45px;
+      }
 }
 .link{
   color: #ffffff;
@@ -21,11 +31,8 @@
     background: none;
 
     &--logo{
-      position: absolute;
-      left: 50%;
-      top: 0;
-      padding: 0;
-      margin-left: -50px;   
+      position: static;
+      margin-left: 0;
     }
   }
   .site-list__toggle{
