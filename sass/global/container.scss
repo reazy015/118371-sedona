@@ -5,6 +5,10 @@
 @media (min-width: $tablet-width){
   .container{
       width: 768px;
-      margin: auto;
+  }
+}
+@media (min-width: $desktop-width){
+  .container{
+    width: 1024px;
   }
 }

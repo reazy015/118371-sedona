@@ -13,7 +13,7 @@
   background-position: 60%;
 }
 @media(min-width: $tablet-width){
-  .page-footer{
+  .page-footer__wrapper{
     display: flex;
     justify-content: space-around;
   }

@@ -64,3 +64,36 @@ fieldset{
   border: none;
   padding: 20px 20px;
 }
+@media (min-width: $tablet-width){
+  .main-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-form__fieldset{
+    outline: 1px solid red;
+  }
+  .user-op{
+    order: 1;
+    flex: 1 1 324px;
+  }
+  .username{
+    order: 2;
+    flex: 1 1 324px;
+  }
+  .user-contacts{
+    order: 3;
+    flex: 100%;
+  }
+  .user-visited{
+    order: 4;
+    flex: 100%;
+  }
+  .user-feedback{
+    order: 5;
+    flex: 100%;
+  }
+  .main-form__btn{
+    order: 6;
+  }
+}
