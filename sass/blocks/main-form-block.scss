@@ -80,6 +80,7 @@ fieldset{
   .username{
     order: 2;
     flex: 1 1 324px;
+    display: flex;
   }
   .user-contacts{
     order: 3;
@@ -87,7 +88,9 @@ fieldset{
   }
   .user-visited{
     order: 4;
-    flex: 100%;
+    flex: auto;
+  }
+  .user-visited__label{
   }
   .user-feedback{
     order: 5;
