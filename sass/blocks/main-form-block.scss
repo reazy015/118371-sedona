@@ -72,31 +72,81 @@ fieldset{
   }
   .main-form__fieldset{
     outline: 1px solid red;
+    display: flex;
   }
   .user-op{
     order: 1;
     flex: 1 1 324px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .user-op__header{
+    flex-basis: 100%;
+  }
+  .user-op__label{
+    flex: 1 0 80%;
+  }
+  .user-op__input{
+    flex: 0 0 20%;
   }
   .username{
     order: 2;
     flex: 1 1 324px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .username__header{
+    flex: 1 0  100%;
+  }
+  .username__label{
+    flex: 0 0 20%;
+  }
+  .username__input{
+    flex:1 0 70%;
   }
   .user-contacts{
     order: 3;
-    flex: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .user-contacts__header{
+    flex: 1 0 100%;
+  }
+  .user-contacts__label{
+
+  }
+  .user-contacts__input{
+
   }
   .user-visited{
     order: 4;
-    flex: auto;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 96px;
+    padding-right: 93px;
+  }
+  .user-visited__header{
+    flex-basis: 100%;
   }
   .user-visited__label{
+    flex: 1 0 160px;
+  }
+  .user-visited__input{
+    flex: 2 0 100px;
   }
   .user-feedback{
     order: 5;
-    flex: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .main-form__btn{
-    order: 6;
+    order: 6;    
   }
 }
