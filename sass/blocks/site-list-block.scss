@@ -5,8 +5,8 @@
 .site-list__item{
   text-align: center;
   background: $background-main;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 20px;
 
       &--logo{
         position: absolute;
@@ -22,17 +22,20 @@
   text-decoration: none;
   font-weight: bold;
 }
+.site-list__toggle{
+  float: right;
+}
 @media(min-width: $tablet-width){
   .site-list{
     display: flex;
-    justify-content: space-around;
     height: 56px;
-    padding-top: 22px;
-
+    justify-content: space-around;
+    padding-top: 20px;
   }
   .site-list__item{
     background: none;
     padding: 0;
+    font-size: 15px;    
 
     &--logo{
       position: static;

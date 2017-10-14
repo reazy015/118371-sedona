@@ -9,6 +9,8 @@
   margin: 0;
 }
 .photo-block__image{
+  display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .photo-block__comments{
@@ -27,6 +29,7 @@
   .photo-list{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 60px;
   }
   .photo{
     &:first-of-type{
@@ -35,5 +38,8 @@
     &:nth-of-type(n+2){
       flex: 1 1 324px;
     }
+  }
+  .photo-block__image{
+    margin: 0;
   }
 }

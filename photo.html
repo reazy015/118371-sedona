@@ -5,6 +5,25 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+    html{
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url('preview/sedona-photo-mobile.jpg')
+    }
+    @media (min-width: 760px){
+      html{
+        background-image: url('preview/sedona-photo-tablet.jpg')
+      }
+    }
+    @media (min-width: 1200px){
+      html{
+        background-image: url('preview/sedona-photo-desktop.jpg')
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body class="page">
 
@@ -35,7 +54,7 @@
 
       <!-- Промо-блок c фотографией в качестве заднего фона и svg надписью -->
       <div class="page-header__promo">
-          <div class="image-wrapper"><img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="svg текст 'Седона' " ></div>
+          <div class="image-wrapper"><img class="page-header__promo-text page-header__promo-text--form" src="img/text-sedona.svg" alt="svg текст 'Седона' " ></div>
       </div>
     </div>
   </header>
@@ -51,7 +70,12 @@
       <ul class="photo-list">
         <li class="photo-list__item photo">
           <figure class="photo-block">
-            <div class="image-wrapper"><img class="photo-block__image" src="img/photo-sunset-mobile@1x.jpg" alt="фотография"></div>
+            <div class="image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png">
+                <img class="photo-block__image" src="img/photo-sunset-mobile@1x.jpg" alt="фотография">
+              </picture>
+            </div>
             <figcaption class="photo-block__comments">Народные просторы</figcaption>
           </figure>
           <p class="photo__author-name">Автор фото: Борис</p>

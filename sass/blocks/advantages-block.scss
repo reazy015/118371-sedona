@@ -1,36 +1,40 @@
 .advantages{}
 .advantages-intro{
   background-color: $background-main;
+  margin-bottom: 35px;
 }
 .advantages-intro__header{
   color: #ffffff;
   font-size: 18px;
   text-align: center;
-  padding-top: 45px;
   line-height: 30px;
+  padding-top: 13px;
 }
 .advantages-intro__description{
   color: #ffffff;
   font-size: 14px;
   text-align: center;
-  padding-top: 25px;
+  margin-bottom: 45px;
 }
-
 .advantages__list{
   @include list-style-none;
-  padding-top: 25px;
-  padding-bottom: 42px;
-  margin: 0;
 }
 .advantages__item{
-  padding-left: 50px;
+  padding-left: 70px;
+  margin-bottom: 60px;
+
+  &:nth-of-type(2){
+    margin-bottom: 40px;
+  }
 }
 .advantages__item-header{
   font-size: 18px;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .advantages__item-description{
   font-size: 14px;
+  margin: 0;
 }
 .advantages-block{
   background-color: $background-main;
@@ -40,6 +44,8 @@
   line-height: 26px;
   text-align: center;
   padding-top: 45px;
+  margin: 0;
+  margin-bottom: 17px;
 
   &--white{
     color: #ffffff;
@@ -49,9 +55,7 @@
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 25px;
-  padding-bottom: 46px;
-
+  margin-bottom: 40px;
 
   &--white{
     color: #ffffff;
@@ -59,11 +63,14 @@
 }
 .advantages-block__image{
   width: 100%;
+  height: 250px;
 }
 
 .block-list{
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #eeeeee;
 }
 
@@ -71,16 +78,20 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
 }
 
 .block-list__description{
   font-size: 14px;
   text-align: center;
 }
+.block-list__tablet-br{
+  display: none;
+}
 @media(min-width: $tablet-width){
   .advantages-intro{
     display: flex;
+    margin-bottom: 160px;
   }
   .text-wrapper{
     flex: 1 1 256px;
@@ -95,6 +106,7 @@
   }
   .advantages__list{
     display: flex;
+    margin-bottom: 15px;
   }
   .advantages__item{
     text-align: center;
@@ -103,6 +115,7 @@
   }
   .advantages__item-header{
     text-align: center;
+    font-size: 21px;
   }
   .advantages__item-description{
     text-align: center;
@@ -116,6 +129,10 @@
     }
   }
   .block-list{
-
+    padding: 40px;
+  }
+  .block-list__header{
+    font-size: 21px;
+    margin-bottom: 30px;
   }
 }
