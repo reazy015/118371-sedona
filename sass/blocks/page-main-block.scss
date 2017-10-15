@@ -5,6 +5,11 @@
   line-height: 26px;
   font-size: 18px;
   margin-top: 0;
+  margin-bottom: 32px;
+
+    &--form, &--photo{
+      margin-bottom: 24px;
+    }
 }
 .page-main__header-intro{
   font-size: 14px;
@@ -13,6 +18,10 @@
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  
+
 }
 @media (min-width: $tablet-width){
   .page-main__header{
