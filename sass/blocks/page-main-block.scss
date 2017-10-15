@@ -4,8 +4,7 @@
   text-align: center;
   line-height: 26px;
   font-size: 18px;
-  margin-bottom: 30px;
-  margin-top: 43px;
+  margin-top: 0;
 }
 .page-main__header-intro{
   font-size: 14px;
@@ -18,10 +17,13 @@
 @media (min-width: $tablet-width){
   .page-main__header{
     font-size: 21px;
-    margin-top: 75px;
 
     &--form{
-      font-size: 31px;
+      font-size: 30px;
+    }
+
+    &--photo{
+      font-size: 30px;
     }
   }
   .page-main__header-intro--form{
@@ -38,10 +40,7 @@
     margin-bottom: 50px;
   }
 }
-@media (min-width: $tablet-width) {
-  .page-main__header{
-    margin-top: 50px;
-  }
+@media (min-width: $desktop-width) {
   .page-main__header--form{
       margin-top: 115px;
   }
