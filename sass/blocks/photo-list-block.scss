@@ -33,7 +33,7 @@
   }
   .photo{
     &:first-of-type{
-      flex: 100%;
+      flex-basis: 100%;
     }
     &:nth-of-type(n+2){
       flex: 1 1 324px;
@@ -41,5 +41,10 @@
   }
   .photo-block__image{
     margin: 0;
+  }
+}
+@media (min-width: $desktop-width){
+  .photo-list{
+    padding-left: 0;
   }
 }
