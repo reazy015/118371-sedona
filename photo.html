@@ -145,36 +145,41 @@
       <!-- Main promo section -->
 
       <section class="promo">
-        <h2 class="promo__header">Все еще сомневаетесь?</h2>
-        <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="promo-video--cssless" width="320" height="240" controls>
-        </video>
-        <div class="promo-video">
-          <div class="promo-video__image-wrapper">
-            <img src="img/video-mobile@1x.jpg" alt="видео">
-          </div>
-          <div class="promo-video__control-panel">
-            <div class="scale">
-              <div class="scale__volume">
-                <div class="scale__volume-slider">
+        <div class="container">
+          <h2 class="promo__header">Все еще сомневаетесь?</h2>
+          <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video class="promo-video--cssless" width="320" height="240" controls>
+          </video>
+          <div class="promo-video">
+            <div class="promo-video__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+                <img src="img/video-mobile@1x.jpg" alt="видео">
+              </picture>
+            </div>
+            <div class="promo-video__control-panel">
+              <div class="scale">
+                <div class="scale__volume">
+                  <div class="scale__volume-slider">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="control-panel">
-              <div class="control-panel__icon-container control-panel__icon-container--replay">
-                <svg class="control-panel__icon control-panel__icon--replay">
-                  <use xlink:href="#video-reply">
-                </svg>
-              </div>
-              <div class="control-panel__icon-container control-panel__icon-container--subtitles">
-                <svg class="control-panel__icon control-panel__icon--subtitles">
-                  <use xlink:href="#video-subtitles">
-                </svg>
-              </div>
-              <div class="control-panel__icon-container">
-                <svg class="control-panel__icon control-panel__icon--fullscreen">
-                  <use xlink:href="#video-fullscreen">
-                </svg>
+              <div class="control-panel">
+                <div class="control-panel__icon-container control-panel__icon-container--replay">
+                  <svg class="control-panel__icon control-panel__icon--replay">
+                    <use xlink:href="#video-reply">
+                  </svg>
+                </div>
+                <div class="control-panel__icon-container control-panel__icon-container--subtitles">
+                  <svg class="control-panel__icon control-panel__icon--subtitles">
+                    <use xlink:href="#video-subtitles">
+                  </svg>
+                </div>
+                <div class="control-panel__icon-container">
+                  <svg class="control-panel__icon control-panel__icon--fullscreen">
+                    <use xlink:href="#video-fullscreen">
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
