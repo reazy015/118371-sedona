@@ -20,7 +20,10 @@
   margin-bottom: 30px;
   padding-right: 25px;
   padding-left: 25px;
-  
+
+  &--form{
+    padding: 0;
+  }
 
 }
 @media (min-width: $tablet-width){
