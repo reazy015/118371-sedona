@@ -3,12 +3,13 @@
 }
 .photo-list__item{
   padding-top: 24px;
-  padding-bottom: 24px;
 }
 .photo-block{
   margin: 0;
 }
 .photo-block__image{
+  display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .photo-block__comments{
@@ -22,4 +23,30 @@
 }
 .photo__like-counter{
   font-size: 14px;
+}
+@media (min-width: $tablet-width){
+  .photo-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+  }
+  .photo{
+    &:first-of-type{
+      flex-basis: 100%;
+    }
+    &:nth-of-type(n+2){
+      flex: 1 1 324px;
+    }
+  }
+  .photo-block__image{
+    margin: 0;
+  }
+  .promo-video{
+    padding-left: 60px;
+  }
+}
+@media (min-width: $desktop-width){
+  .photo-list{
+    padding-left: 0;
+  }
 }

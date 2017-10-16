@@ -1,17 +1,124 @@
 .page-header{
+  margin-bottom: 40px;
 }
 .page-header__logo-image{
   display: block;
   margin: auto;
+  width: 103px;
 }
 .page-header__promo{
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-size: cover;
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 .page-header__promo-text{
   display: block;
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
+  padding-top: 90px;
+  padding-bottom: 76px;
+
+  &--form{
+    max-width: 70%;
+    padding-top: 50px;
+    padding-bottom: 69px;
+  }
+}
+.promo-image-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.page-header__decor{
+  position: relative;
+  background-color: transparent;
+}
+.page-header__decor-left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 25px solid transparent;
+  border-bottom: 0;
+  border-left: 160px solid #ffffff;
+}
+.page-header__decor-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 25px solid transparent;
+  border-bottom: 0;
+  border-right: 160px solid #ffffff;
+}
+.page-header__decor-left--add{
+  display: none;
+}
+.page-header__decor-right--add{
+  display: none;
+}
+@media (min-width: $tablet-width){
+  .page-header{
+    margin-bottom: 50px;
+
+    &--form{
+      margin-bottom: 77px;
+    }
+
+    &--photo{
+      margin-bottom: 77px;
+    }
+  }
+  .page-header__decor-left{
+    border: 57px solid transparent;
+    border-left: 350px solid #ffffff;
+    border-bottom: 0;
+    left: 33px;
+  }
+  .page-header__decor-right{
+    border: 57px solid transparent;
+    border-right: 350px solid #ffffff;
+    border-bottom: 0;
+    right: 33px;
+  }
+  .page-header__decor-left--add{
+    display: block;
+    left: -110px;
+  }
+  .page-header__decor-right--add{
+    display: block;
+    right: -110px;
+  }
+  .page-header__promo{
+    margin-top: -20px;
+  }
+  .page-header__promo-text{
+    padding-top: 78px;
+    padding-bottom: 90px;
+
+    &--form{
+      padding-top: 90px;
+      padding-bottom: 120px;
+    }
+  }
+}
+@media (min-width: $desktop-width){
+  .page-header{
+    &--photo{
+      margin-bottom: 110px;
+    }
+  }
+  .page-header__decor-left{
+    left: 21%;
+  }
+  .page-header__decor-right{
+    right: 21%;
+  }
+  .page-header__decor-left--add{
+    left: 0;
+    border-left: 400px solid #ffffff;
+  }
+  .page-header__decor-right--add{
+    right: 0;
+    border-right: 400px solid #ffffff;
+  }
+  .page-header__promo-text--form{
+    padding-bottom: 130px;
+  }
 }

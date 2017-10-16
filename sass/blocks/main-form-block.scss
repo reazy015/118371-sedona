@@ -2,12 +2,16 @@ fieldset{
   padding: 0;
 }
 .main-form{
-  padding-top: 25px;
 }
 .main-form__fieldset{
   border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-form__btn{
+  display: block;
+  margin: auto;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -16,51 +20,263 @@ fieldset{
   width: 290px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .fieldset-header{
   text-align: center;
   font-weight: bold;
-  padding-bottom: 26px;
+  font-size: 18px;
+  flex-basis: 100%;
+  margin-bottom: 25px;
 }
 .fieldset-label{
   font-size: 14px;
 }
 .fieldset-input{
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  min-height: 53px;
+  flex: 1 0 60%;
+
 }
-.user-contacts{}
+.username__label{
+  padding-top: 25px;
+  flex: 0 0 20%;
+  padding-right: 20px;
+}
+.username__input{
+  outline: none;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 5px;
+}
+.user-contacts{
+  flex-direction: column;
+}
+.user-contacts__header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .user-contacts__input{
-  width: 100%;
+  width: 80%;
+  align-self: center;
+  outline: none;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 5px;
 }
 .user-contacts__label{
-  display: block;
+  padding-left: 40px;
   margin-bottom: 10px;
 }
 .user-op{
-  padding-bottom: 25px;
+}
+.user-op__header{
+  margin-top: 31px;
+  margin-bottom: 45px;
 }
 .user-op__input{
-  display: block;
+  flex: 0 0 20%
 }
 .user-op__label{
+  flex: 1 0 70%;
   font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 .user-visited{
   font-size: 18px;
+  flex-direction: row;
+}
+.user-visited__header{
+  margin-bottom: 40px;
+}
+.user-visited__label{
+  flex: 1 0 70%;
 }
 .user-visited__input{
-  display: block;
+  flex: 0 0 20%;
+  margin-bottom: 67px;
 }
-.user-feedback{}
+.user-feedback{
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+.user-feedback__header{
+  margin-top: 10px;
+  margin-top: 5px;
+}
+.textarea-container{
+  flex-basis: 100%;
+}
 .user-feedback__text{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  width: 100%;
   resize: none;
+  width: 85%;
   background-color: #eeeeee;
   border: none;
-  padding: 20px 20px;
+  padding: 15px 15px 0 15px;
+  align-self: center;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+}
+@media (min-width: $tablet-width){
+  .main-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-form__fieldset{
+    outline: 1px solid red;
+    display: flex;
+  }
+  .fieldset-header{
+    font-size: 21px;
+  }
+  .fieldset-input{
+    flex: auto;
+  }
+  .user-op{
+    order: 1;
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .user-op__header{
+    flex-basis: 100%;
+    margin-bottom: 60px;
+  }
+  .user-op__label{
+    flex: 1 0 80%;
+    text-align: right;
+    padding-right: 65px;
+    text-transform: none;
+  }
+  .user-op__input{
+    flex: 0 0 20%;
+  }
+  .username{
+    order: 2;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 25px;
+  }
+  .username__header{
+    flex: 1 0  100%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .username__label{
+    padding-left: 30px;
+    padding-top: 30px;
+    flex: 0 0 20%;
+  }
+  .username__input{
+    flex: 1 0 30%;
+  }
+  .user-contacts{
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .user-contacts__header{
+  }
+  .user-contacts__label{
+    padding-left: 20px;
+  }
+  .user-contacts__input{
+    align-self: auto;
+    flex-grow: 1;
+  }
+  .user-visited{
+    order: 4;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 96px;
+    padding-right: 93px;
+  }
+  .user-visited__header{
+    flex-basis: 100%;
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
+  .user-visited__label{
+    flex: 1 0 160px;
+    text-transform: none;
+  }
+  .user-visited__input{
+    flex: 2 0 100px;
+  }
+  .user-feedback{
+    order: 5;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+  }
+  .user-feedback__header{
+    flex-basis: 100%;
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+  .textarea-container{
+    flex-basis: 100%;
+  }
+  .main-form__btn{
+    order: 6;
+    margin-left: 60px;
+  }
+}
+@media (min-width: $desktop-width){
+  .user-visited__input{
+    flex: 1 0 50px;
+  }
+  .username__label{
+    flex: 1 0 86px
+  }
+  .username__input{
+    flex: 1 0 315px;
+  }
+  .user-contacts{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .user-contacts__header{
+    flex-basis: 100%;
+    margin-bottom: 100px;
+  }
+  .user-contacts__label{
+    flex: 0 0 166px;
+    padding-top: 25px;
+  }
+  .user-contacts__input{
+    flex: 0 0 320px;
+  }
+  .user-visited__header{
+    margin-top: 20px;
+  }
+  .user-feedback__header{
+    margin-top: 20px;
+  }
+  .user-feedback__text{
+    width: 80%;
+  }
+  .main-form__btn{
+    width: 480px;
+    margin-left: 120px
+  }
+
 }

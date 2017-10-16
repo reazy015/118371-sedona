@@ -1,12 +1,28 @@
 .visibility-hidden{
   visibility: hidden;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
 }
-.container {
-  width: 280px;
-  margin: auto;
+.display-hidden{
+  display: none;
+}
+.clerfix:after{
+  content: '';
+  display: table;
+  clear: both;
 }
 body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+body{
+  background: url('preview/sedona-index-mobile.jpg') no-repeat 50% 0;
+  background-size: 720px auto;
+  min-height: 750px;
 }
