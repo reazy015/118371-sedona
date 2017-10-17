@@ -3,6 +3,18 @@
   background-color: $background-main;
   margin-bottom: 35px;
   position: relative;
+
+  &:before{
+    display: block;
+    position: absolute;
+    content: '';
+    background-image: url('/img/bg-triangle.svg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 37px;
+
+  }
 }
 .advantages__decor{
   position: relative;

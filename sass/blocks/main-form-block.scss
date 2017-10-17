@@ -245,10 +245,12 @@ fieldset{
     flex: 1 0 50px;
   }
   .username__label{
-    flex: 1 0 86px
+    flex: 0 0 50px;
+    max-width: 80px;
   }
   .username__input{
     flex: 1 0 315px;
+    max-width: 100%;
   }
   .user-contacts{
     flex-direction: row;
