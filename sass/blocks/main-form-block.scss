@@ -70,33 +70,57 @@ fieldset{
   margin-bottom: 10px;
 }
 .user-op{
+  flex-direction: column;
+  text-align: right;
 }
 .user-op__header{
   margin-top: 31px;
   margin-bottom: 45px;
 }
 .user-op__input{
-  flex: 0 0 20%
+  display: none;
+
+  &:checked + .user-op__label::before{
+    display: block;
+    content: '';
+    background-image: url('/img/icon-burger.svg');
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    }
 }
 .user-op__label{
-  flex: 1 0 70%;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 50px;
+  position: relative;
 }
 .user-visited{
   font-size: 18px;
-  flex-direction: row;
+  flex-direction: column;
 }
 .user-visited__header{
   margin-bottom: 40px;
 }
 .user-visited__label{
-  flex: 1 0 70%;
+  position: relative;
 }
 .user-visited__input{
-  flex: 0 0 20%;
-  margin-bottom: 67px;
+  display: none;
+
+  &:checked + .user-visited__label::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    background-image: url('img/icon-burger.svg');
+
+  }
 }
 .user-feedback{
   flex-direction: column;
