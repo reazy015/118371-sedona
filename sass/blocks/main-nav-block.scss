@@ -1,6 +1,14 @@
 .main-nav{
   margin-bottom: 55px;
 }
+.main-nav__wrapper{
+  position: relative;
+}
+.header-logo{
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
 @media (min-width: $tablet-width){
   .main-nav{
       margin-bottom: 0;

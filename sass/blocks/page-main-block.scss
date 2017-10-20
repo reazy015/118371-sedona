@@ -2,10 +2,10 @@
 }
 .page-main__header{
   text-align: center;
-  line-height: 26px;
+  line-height: 27px;
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 
     &--form, &--photo{
       margin-bottom: 24px;
@@ -15,12 +15,12 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding-right: 25px;
   padding-left: 25px;
-  
+
 
 }
 @media (min-width: $tablet-width){
