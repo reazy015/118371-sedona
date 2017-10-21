@@ -1,0 +1,161 @@
+.sights {
+  padding-bottom: 41px;
+}
+
+.sights__title {
+  margin-bottom: 31px;
+
+  text-align: center;
+}
+
+.sights__item {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 54px;
+  }
+
+  .sights__text {
+    &:hover {
+      &::before {
+        background-color: #e5e5e5;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #d5d5d5;
+      }
+    }
+  }
+}
+
+.sights__field {
+  display: none;
+
+  &:checked + label::after {
+    content: "";
+
+    position: absolute;
+    left: 20px;
+    bottom: 4px;
+
+    width: 11px;
+    height: 18px;
+
+    border-bottom: 4px solid #231f20;
+    border-right: 4px solid #231f20;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 5px;
+
+    transform: rotate(45deg);
+  }
+
+  &:checked:active + label::after {
+    opacity: 0.3;
+  }
+}
+
+.sights__text {
+  position: relative;
+
+  padding-left: 78px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -14px;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .sights {
+    order: 4;
+    padding-bottom: 34px;
+  }
+
+  .sights__title {
+    margin-left: auto;
+    margin-top: -26px;
+    margin-right: auto;
+    margin-bottom: 56px;
+    width: 400px;
+
+    background-color: #ffffff;
+  }
+
+  .sights__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 95px;
+    width: 489px;
+  }
+
+  .sights__item {
+    width: 230px;
+
+    &:not(:last-child) {
+      margin-bottom: 62px;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .sights {
+    padding-bottom: 32px;
+  }
+
+  .sights__content {
+    margin-left: 0;
+    width: 960px;
+  }
+
+  .sights__item {
+    width: auto;
+
+    &:nth-child(1) {
+      .sights__text {
+        padding-left: 81px;
+      }
+    }
+
+    &:nth-child(2) {
+      .sights__text {
+        padding-left: 81px;
+      }
+    }
+  }
+}

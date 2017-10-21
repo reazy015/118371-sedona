@@ -50,12 +50,6 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active"><a class="link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="link" href="photo.html">Фото и видео</a></li>
-            <a class="site-list__item site-list__item--logo" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="">
-                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="лого">
-              </picture>
-            </a>
             <li class="site-list__item"><a class="link" href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a class="link" href="#">Html academy</a></li>
 
@@ -63,7 +57,11 @@
 
           <!-- Кнопка, раскрывающая адаптивное меню -->
           <button class="site-list__toggle" type="button" name="button">Меню</button>
-
+          <div class="header-logo">
+            <a class="header-logo__link" href="index.html">
+              <img class="header-logo__image" src="img/logo-sedona-mobile.svg" alt="лого">
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -88,14 +86,13 @@
   <main class="page-main">
     <div class="container">
       <h1 class="page-main__header page-main__header--photo">Фото и видео</h1>
-      <h2 class="page-main__header-intro page-main__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+      <h2 class="page-main__header-intro page-main__header-intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
 
       <ul class="photo-list">
         <li class="photo-list__item photo">
-          <figure class="photo-block">
+          <figure class="photo-block photo-block--first">
             <div class="image-wrapper">
               <picture>
-
                 <source  srcset="img/photo-1-desktop.png" media="(min-width: 1200px)">
                   <source  srcset="img/photo-1-tablet.png" media="(min-width: 768px)">
                 <img class="photo-block__image" src="img/photo-sunset-mobile@1x.jpg" alt="фотография">
@@ -144,9 +141,9 @@
 
       <!-- Main promo section -->
 
-      <section class="promo">
+      <section class="promo promo--photo">
         <div class="container">
-          <h2 class="promo__header">Все еще сомневаетесь?</h2>
+          <h2 class="promo__header promo__header--photo">Все еще сомневаетесь?</h2>
           <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <video class="promo-video--cssless" width="320" height="240" controls>
           </video>
@@ -192,31 +189,37 @@
   <!-- Footer -->
 
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <h2 class="page-footer__header">#Visitsedona</h2>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <h2 class="page-footer__header">#Visitsedona</h2>
 
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__item-link social__item-link--twr" href="twitter.com">Twitter</a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-link social__item-link--fb" href="facebook.com">Facebook</a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-link social__item-link--yt" href="youtube.com">Youtube</a>
-              </li>
-            </ul>
-          </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link social__item-link--twr" href="twitter.com">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--fb" href="facebook.com">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--yt" href="youtube.com">Youtube</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text copyright__text--bgimg">Разработано</b>
-          </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <span class="copyright__icon">
+            <svg class="copyright__icon-svg">
+              <use xlink:href="#academy"></use>
+            </svg>
+          </span>
+          </b>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 </body>

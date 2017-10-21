@@ -78,7 +78,10 @@
           <button class="site-list__toggle" type="button" name="button">Меню</button>
           <div class="header-logo">
             <a class="header-logo__link" href="index.html">
-              <img class="header-logo__image" src="img/logo-sedona-mobile.svg" alt="лого">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/logo-sedona-desktop.svg">
+                <img class="header-logo__image" src="img/logo-sedona-mobile.svg" alt="лого">
+              </picture>
             </a>
           </div>
         </div>
@@ -109,7 +112,7 @@
         <h2 class="advantages-header visibility-hidden">Advantages header</h2>
         <div class="advantages-intro">
           <div class="text-wrapper">
-            <h2 class="advantages-intro__header">Настоящий городок <br> - № 1 - </h2>
+            <h2 class="advantages-intro__header">Настоящий городок <br><span class="advantage-intro__header-number"> - № 1 - </span></h2>
             <p class="advantages-intro__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
           </div>
           <div class="img-wrapper">
@@ -152,7 +155,7 @@
 
         <div class="advantages-block advantages-block--bgcolor">
           <div class="text-wrapper advantages-block__elem-order">
-            <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br>- № 2 -</h2>
+            <h2 class="advantages-block__header advantages-block__header--white">Там есть мост дьявола <br><span class="advantages-block__header-number">- № 2 -</span></h2>
             <p class="advantages-block__description advantages-block__description--white">Да, по нему можно пройтись! Если вы осмелитесь, конечо</p>
           </div>
           <div class="img-wrapper advantages-block__elem-order">
@@ -165,17 +168,17 @@
 
         <ul class="advantages__list">
           <div class=" block-list">
-            <h2 class="block-list__header">Небольшая<br class="block-list__tablet-br"> площадь <br> № 3 </h2>
+            <h2 class="block-list__header">Небольшая<br class="block-list__tablet-br"> площадь <br><span class="advantages-block__header-number">- № 3 -</span></h2>
             <p class="block-list__description">Все интересные места находятся очень близко</p>
           </div>
 
           <div class=" block-list">
-            <h2 class="block-list__header">Красивая<br class="block-list__tablet-br"> дорога <br> № 4 </h2>
+            <h2 class="block-list__header">Красивая<br class="block-list__tablet-br"> дорога <br><span class="advantages-block__header-number">- № 4 -</span></h2>
             <p class="block-list__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
           <div class=" block-list">
-            <h2 class="block-list__header">Мало<br class="block-list__tablet-br"> туристов <br> № 5 </h2>
+            <h2 class="block-list__header">Мало<br class="block-list__tablet-br"> туристов <br><span class="advantages-block__header-number">- № 5 -</span></h2>
             <p class="block-list__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </ul>
@@ -225,12 +228,12 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано
-            <span class="copyright__icon">
-              <svg class="copyright__icon-svg">
-                <use xlink:href="#academy"></use>
-              </svg>
-            </span>
+          <b class="copyright__text">Разработано</b>
+          <span class="copyright__icon">
+            <svg class="copyright__icon-svg">
+              <use xlink:href="#academy"></use>
+            </svg>
+          </span>
           </b>
         </div>
       </div>

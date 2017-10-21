@@ -1,5 +1,6 @@
 .photo-list{
   @include list-style-none;
+  margin-bottom: 12px;
 }
 .photo-list__item{
   padding-top: 24px;
@@ -14,28 +15,46 @@
 }
 .photo-block__comments{
   font-size: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
-.photo{}
+.photo{
+  padding: 22px 20px;
+  border-top: 1px solid #d6d6d6;
+
+  &:last-of-type{
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
 .photo__author-name{
   font-size: 14px;
+  margin-top: 0;
   margin-bottom: 14px;
+  text-transform: none;
 }
 .photo__like-counter{
   font-size: 14px;
+  font-weight: 700;
+  padding-left: 40px;
+  margin-bottom: 0;
 }
 @media (min-width: $tablet-width){
   .photo-list{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-left: 60px;
+    margin-bottom: 72px;
   }
   .photo{
+    padding: 0;
+    border: 0;
+    background-color: #f2f2f2;
     &:first-of-type{
-      flex-basis: 100%;
+      width: 100%;
     }
     &:nth-of-type(n+2){
-      flex: 1 1 324px;
+      width: 50%;
     }
   }
   .photo-block__image{

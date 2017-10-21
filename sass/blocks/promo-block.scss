@@ -1,18 +1,30 @@
 .promo{
-  padding-top: 24px;
+  padding-top: 7px;
   margin-bottom: 53px;
+
+  &--photo{
+    margin-bottom: 40px;
+  }
 }
 .promo__header{
   text-align: center;
   font-size: 21px;
+
+  &--photo{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 .promo__text{
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 20px;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 37px;
 
   &--photo{
+    width: 240px;
     padding-left: 23px;
     padding-right: 20px;
     text-align: center;
@@ -20,9 +32,12 @@
 }
 .promo__link{
   display: block;
-  padding: 20px 43px;
+  width: 250px;
+  padding: 16px 15px;
   margin: auto;
   background: $background-main;
+  font-size: 21px;
+  line-height: 26px;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
@@ -38,7 +53,7 @@
   display: none;
 }
 .promo-video__control-panel{
-  width: 80%;
+  width: 88%;
   margin: auto;
   margin-top: -50px;
 }
@@ -95,6 +110,12 @@
   }
   .promo__header{
     font-size: 30px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+  .promo__text{
+    width: auto;
+    margin-bottom: 42px;
   }
   .promo__text-wrap{
     display: block;
@@ -102,6 +123,6 @@
   .promo__link{
     font-size: 21px;
     font-weight: bold;
-    width: 460px;
+    width: 429px;
   }
 }

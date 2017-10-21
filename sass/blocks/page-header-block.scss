@@ -1,5 +1,9 @@
 .page-header{
   margin-bottom: 40px;
+
+  &--form{
+    margin-bottom: 36px;
+  }
 }
 .page-header__logo-image{
   display: block;
@@ -40,31 +44,10 @@
 
   }
 }
-.page-header__decor{
-  position: relative;
-  background-color: transparent;
-}
-.page-header__decor-left{
+.header-logo{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  border: 25px solid transparent;
-  border-bottom: 0;
-  border-left: 160px solid #ffffff;
-}
-.page-header__decor-right{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border: 25px solid transparent;
-  border-bottom: 0;
-  border-right: 160px solid #ffffff;
-}
-.page-header__decor-left--add{
-  display: none;
-}
-.page-header__decor-right--add{
-  display: none;
+  left: 50%;
+  margin-left: -50px;
 }
 @media (min-width: $tablet-width){
   .page-header{
@@ -78,25 +61,11 @@
       margin-bottom: 77px;
     }
   }
-  .page-header__decor-left{
-    border: 57px solid transparent;
-    border-left: 350px solid #ffffff;
-    border-bottom: 0;
-    left: 33px;
-  }
-  .page-header__decor-right{
-    border: 57px solid transparent;
-    border-right: 350px solid #ffffff;
-    border-bottom: 0;
-    right: 33px;
-  }
-  .page-header__decor-left--add{
-    display: block;
-    left: -110px;
-  }
-  .page-header__decor-right--add{
-    display: block;
-    right: -110px;
+  .header-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
   }
   .page-header__promo{
     margin-top: -20px;
@@ -110,6 +79,24 @@
       padding-bottom: 120px;
     }
   }
+  .promo-image-wrapper{
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+    &::after{
+      display: block;
+      position: absolute;
+      content: '';
+      background-image: url('/img/bg-intro-triangle-tablet.svg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      height: 11%;
+      bottom: 0;
+      left: 0;
+
+    }
+  }
 }
 @media (min-width: $desktop-width){
   .page-header{
@@ -117,21 +104,10 @@
       margin-bottom: 110px;
     }
   }
-  .page-header__decor-left{
-    left: 21%;
-  }
-  .page-header__decor-right{
-    right: 21%;
-  }
-  .page-header__decor-left--add{
-    left: 0;
-    border-left: 400px solid #ffffff;
-  }
-  .page-header__decor-right--add{
-    right: 0;
-    border-right: 400px solid #ffffff;
-  }
-  .page-header__promo-text--form{
-    padding-bottom: 130px;
+  .header-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -95px;
   }
 }
