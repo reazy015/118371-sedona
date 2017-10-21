@@ -1,8 +1,14 @@
 .main-nav{
   margin-bottom: 55px;
 }
+.main-nav__wrapper{
+  position: relative;
+}
 @media (min-width: $tablet-width){
   .main-nav{
       margin-bottom: 0;
+  }
+  .main-nav__wrapper{
+    position: relative;
   }
 }
