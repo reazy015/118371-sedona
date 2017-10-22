@@ -1,0 +1,146 @@
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+
+  padding-left: 50px;
+  margin-bottom: 28px;
+
+  br {
+    display: none;
+  }
+}
+
+.features__icon {
+  position: absolute;
+
+  fill: #81b3d2;
+
+  &--house {
+    left: 1px;
+    top: -10px;
+  }
+
+  &--gift {
+    left: 5px;
+    top: -11px;
+  }
+
+  &--food {
+    left: -2px;
+    top: -5px;
+  }
+}
+
+.features__title {
+  margin-bottom: 14px;
+}
+
+.features__text {
+  margin: 0;
+}
+
+
+@media (min-width: 768px) {
+  .features__list {
+    display: flex;
+  }
+
+  .features__item {
+    margin-bottom: 0;
+    padding-left: 45px;
+    padding-top: 138px;
+    padding-right: 45px;
+    padding-bottom: 61px;
+    width: 256px;
+
+    text-align: center;
+
+    &--house {
+      order: 1;
+    }
+
+    &--gift {
+      order: 3;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &--food {
+      order: 2;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .features__icon {
+    &--house {
+      left: calc(50% - 38px);
+      top: 59px;
+
+      width: 77px;
+      height: 73px;
+    }
+
+    &--gift {
+      left: calc(50% - 33px);
+      top: 57px;
+
+      width: 64px;
+      height: 75px;
+    }
+
+    &--food {
+      left: calc(50% - 40px);
+      top: 62px;
+
+      width: 80px;
+      height: 70px;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 21px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .features__item {
+    padding-bottom: 82px;
+    width: 400px;
+
+    br {
+      display: block;
+    }
+
+    text-align: center;
+
+    &--house {
+      order: 1;
+    }
+
+    &--gift {
+      order: 3;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &--food {
+      order: 2;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .features__icon {
+    &--house {
+      left: calc(50% - 39px);
+    }
+  }
+}

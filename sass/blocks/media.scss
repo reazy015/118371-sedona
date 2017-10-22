@@ -1,0 +1,174 @@
+.media {
+  display: flex;
+  flex-direction: column;
+}
+
+.media__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+
+  border-top: 1px solid #e5e5e5;
+
+  &--video {
+    order: 1;
+    padding-top: 15px;
+    padding-bottom: 49px;
+  }
+}
+
+.media__link {
+  margin-bottom: 15px;
+  height: 280px;
+
+  background-color: #e09a52;
+}
+
+.media__info {
+  align-self: flex-start;
+}
+
+.media__description {
+  margin-bottom: 6px;
+}
+
+.media__name {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.media__author {
+  margin: 0;
+
+  line-height: 24px;
+  text-transform: none;
+}
+
+.media__title {
+  margin-bottom: 12px;
+}
+
+.media__text {
+  margin-bottom: 35px;
+  width: 240px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .media {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .media__item {
+    width: 50%;
+    padding: 0;
+
+    border-top: none;
+
+    &--top {
+      width: 100%;
+
+      .media__link {
+        height: 400px;
+      }
+    }
+
+    &--video {
+      padding-top: 34px;
+      width: 100%;
+    }
+
+    &:nth-child(2n + 3) {
+      .media__info {
+        background-color: #eaeaea;
+      }
+    }
+  }
+
+  .media__link {
+    margin: 0;
+    width: 100%;
+    height: 267px;
+  }
+
+  .media__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 11px;
+    width: 100%;
+
+    background-color: #f2f2f2;
+  }
+
+  .media__author {
+    margin: 0;
+  }
+
+  .media__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .media__text {
+    margin-bottom: 73px;
+    padding: 0;
+    width: 425px;
+
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .media {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .media__item {
+    width: 400px;
+
+    &--top {
+      width: 100%;
+    }
+
+    &--video {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 38px;
+      width: 800px;
+    }
+
+    &:nth-child(2n + 3) {
+      .media__info {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .media__info {
+    margin-top: -80px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+
+  .media__text {
+    margin-bottom: 71px;
+  }
+}

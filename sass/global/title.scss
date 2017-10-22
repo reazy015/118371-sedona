@@ -1,0 +1,31 @@
+.title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  &--big {
+    font-size: 21px;
+  }
+
+  &--promo-extended {
+    color: #ffffff;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 21px;
+
+    &--big {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &--bigger {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

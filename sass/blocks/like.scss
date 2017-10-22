@@ -1,0 +1,40 @@
+.like {
+  display: flex;
+  width: 85px;
+}
+
+.like__btn {
+  margin-right: 15px;
+  width: 23px;
+  height: 21px;
+
+  fill: #b2b2b2;
+
+  cursor: pointer;
+}
+
+.like__amount {
+  padding-top: 2px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+  .like {
+    margin-bottom: 4px;
+  }
+
+  .like__btn {
+    margin-right: 10px;
+
+    fill: #a9a9a9;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .like__btn {
+    fill: #ffffff;
+  }
+}
