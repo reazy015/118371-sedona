@@ -89,18 +89,19 @@
 
   cursor: pointer;
 
-  &:hover {
-    svg {
-      color: #333333;
-    }
+  &  svg {
+        color: #5c6870;
+
+        &:hover{
+          color: #333333;
+        }
+
+        &:active{
+          color: #c1c1c1;
+        }
+      }
   }
 
-  &:active {
-    svg {
-      opacity: 0.3;
-    }
-  }
-}
 
 .video__subtitles {
   margin-left: auto;
@@ -120,7 +121,7 @@
 
   &:active {
     svg {
-      opacity: 0.3;
+      color: #c1c1c1;
     }
   }
 }
@@ -141,7 +142,7 @@
 
   &:active {
     svg {
-      opacity: 0.3;
+      color: #c1c1c1;
     }
   }
 }
@@ -206,24 +207,6 @@
     width: 648px;
 
     background-color: transparent;
-  }
-
-  .video__replay,
-  .video__subtitles,
-  .video__full-screen {
-    color: #ffffff;
-
-    &:hover {
-      svg {
-        color: #ffffff;
-      }
-    }
-
-    &:active {
-      svg {
-        opacity: 1;
-      }
-    }
   }
 }
 

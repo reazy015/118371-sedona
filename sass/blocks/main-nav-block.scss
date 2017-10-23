@@ -240,3 +240,11 @@
     }
   }
 }
+
+// Стили для открытия и скрытия меню
+.main-nav__list--open{
+  display: block;
+}
+.main-nav__list--close{
+  display: none;
+}

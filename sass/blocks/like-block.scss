@@ -1,6 +1,6 @@
 .like {
   display: flex;
-  width: 85px;
+  min-width: 85px;
 }
 
 .like__btn {
@@ -17,6 +17,7 @@
   padding-top: 2px;
   line-height: 24px;
   font-weight: bold;
+
 }
 
 

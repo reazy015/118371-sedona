@@ -32,7 +32,13 @@
 }
 
 .user-impression__field {
-  display: none;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 
   &:checked + label::after {
     content: "";
@@ -93,10 +99,11 @@
 
       position: absolute;
       top: 26px;
+      bottom: 0;
       right: 0;
 
       width: 1px;
-      height: 292px;
+      height: 80%;
 
       background-color: #dbdbdb;
     }
@@ -130,7 +137,6 @@
   }
 
   .user-impression__field {
-    display: none;
 
     &:checked + label::after {
       left: 21px;

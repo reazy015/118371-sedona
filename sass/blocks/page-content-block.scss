@@ -276,6 +276,7 @@
 
   .page-content__promo {
     overflow: hidden;
+    position: relative;
 
     &--extended {
       .page-content__text {
@@ -329,7 +330,11 @@
   }
 
   .page-content__promo-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 800px;
+
   }
 
   .page-content__promo-img {

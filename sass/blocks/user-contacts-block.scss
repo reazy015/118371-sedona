@@ -115,6 +115,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
   }
 
   .user-contacts__item {
@@ -122,7 +124,8 @@
     align-items: center;
 
     &:nth-child(1) {
-      width: 400px;
+      max-width: 50%;
+      padding-right: 10px;
 
       span {
         display: none;
@@ -130,7 +133,8 @@
     }
 
     &:nth-child(2) {
-      width: 480px;
+      max-width: 50%;
+      padding-left: 10px;
 
       .user-contacts__text {
         width: 148px;
@@ -142,6 +146,7 @@
     padding-left: 0;
     padding-top: 9px;
     margin-right: 17px;
+    max-width: 150px;
   }
 
   .user-contacts__field {

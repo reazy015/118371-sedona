@@ -15,6 +15,7 @@
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-nav">
+          <!-- Классы main-nav__list--open и main-nav__list--close определяют включение и выключение меню при использования JS скрипта (которого пока что нет:)) -->
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -71,7 +72,7 @@
             </a>
             <div class="media__info">
               <div class="media__description">
-                <b class="media__name">Народные просторы</b>
+                <b class="media__name">Народные просторы </b>
                 <p class="media__author">Автор фото: Борис</p>
               </div>
               <div class="media__like  like">
@@ -101,7 +102,8 @@
                 <p class="media__author">Автор фото: Сергей</p>
               </div>
               <div class="media__like  like">
-                <svg class="like__btn" width="22" height="20" aria-labelledby="title-icon-like" role="img">
+                <svg class="like__btn" width="22" height="20" aria-labelledby="title-icon-like-second" role="img">
+                  <title id="title-icon-like-second">Кнопка "Нравится"</title>
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="like__amount">143</span>
@@ -126,7 +128,8 @@
                 <p class="media__author">Автор фото: Петр</p>
               </div>
               <div class="media__like  like">
-                <svg class="like__btn" width="22" height="20" aria-labelledby="title-icon-like" role="img">
+                <svg class="like__btn" width="22" height="20" aria-labelledby="title-icon-like-third" role="img">
+                  <title id="title-icon-like-third">Кнопка "Нравится"</title>
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="like__amount">96</span>
@@ -175,24 +178,24 @@
                   </div>
                 </div>
                 <div class="video__controls">
-                  <div class="video__replay">
-                    <svg width="16" height="20" aria-labelledby="icon-replay" role="img">
+                  <buttton class="video__replay">
+                    <svg class="video__replay-icon" width="16" height="20" aria-labelledby="icon-replay" role="img">
                       <title id="icon-replay">Кнопка "Проиграть заново"</title>
                       <use xlink:href="#icon-video-replay"></use>
                     </svg>
-                  </div>
-                  <div class="video__subtitles">
+                  </buttton>
+                  <buttton class="video__subtitles">
                     <svg width="32" height="20" aria-labelledby="icon-subtitles" role="img">
                       <title id="icon-subtitles">Кнопка "Субтитры"</title>
                       <use xlink:href="#icon-video-subtitles"></use>
                     </svg>
-                  </div>
-                  <div class="video__full-screen">
+                  </buttton>
+                  <buttton class="video__full-screen">
                     <svg width="20" height="20" aria-labelledby="icon-fullscreen" role="img">
                       <title id="icon-fullscreen">Кнопка "На весь экран"</title>
                       <use xlink:href="#icon-video-fullscreen"></use>
                     </svg>
-                  </div>
+                  </buttton>
                 </div>
               </div>
             </div>
@@ -230,7 +233,7 @@
         </ul>
         <div class="page-footer__copyright  copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru">
             <svg class="copyright__logo" width="27px" height="34px" aria-labelledby="title-icon-htmlacademy" role="img">
               <title id="title-icon-htmlacademy">Ссылка-логотип ведущая на страницу htmlacademy.ru</title>
               <use xlink:href="#icon-logo-htmlacademy"></use>

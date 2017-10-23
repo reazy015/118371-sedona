@@ -34,6 +34,7 @@
 
 .media__description {
   margin-bottom: 6px;
+  max-width: 80%
 }
 
 .media__name {
@@ -142,6 +143,7 @@
 
   .media__item {
     width: 400px;
+    position: relative;
 
     &--top {
       width: 100%;
@@ -162,7 +164,9 @@
   }
 
   .media__info {
-    margin-top: -80px;
+    position: absolute;
+    bottom: 0;
+
 
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
