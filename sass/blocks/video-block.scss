@@ -97,18 +97,18 @@
 
   cursor: pointer;
 
-  &  svg {
-        color: #5c6870;
+  & svg {
+    color: #5c6870;
 
-        &:hover{
-          color: #333333;
-        }
+    &:hover{
+      color: #333333;
+    }
 
-        &:active{
-          color: #c1c1c1;
-        }
-      }
+    &:active{
+      color: #c1c1c1;
+    }
   }
+}
 
 
 .video__subtitles {

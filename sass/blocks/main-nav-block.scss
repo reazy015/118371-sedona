@@ -242,9 +242,10 @@
 }
 
 // Стили для открытия и скрытия меню
-.main-nav__list--open{
+.main-nav__list--open {
   display: block;
 }
-.main-nav__list--close{
+
+.main-nav__list--close {
   display: none;
 }
